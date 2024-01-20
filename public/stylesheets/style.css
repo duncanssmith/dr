@@ -1,13 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  /* font-family: Helvetica, "Lucida Grande", Arial, sans-serif; */
+  font: 14px; 
   background:#660;
 }
-
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
-
 .nav-main {
   background:#fff;
 }
@@ -64,4 +67,57 @@ a {
 .home td {
   margin: 10px;
   padding: 20px;
+}
+
+
+nav {
+  background: #efefef;
+  margin: 0 auto;
+  width: 400px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  text-decoration: none;
+  color: #888;
+  background: #fff;
+  display: inline-block;
+  width: 100px;
+  padding: 10px 20px;
+}
+ul li a:hover {
+  background: #000;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav > ul:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+nav > ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+nav ul li:hover > ul {
+  visibility: visible;
+}
+
+nav ul ul li {
+  position: relative;
+}
+
+nav ul ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
 }

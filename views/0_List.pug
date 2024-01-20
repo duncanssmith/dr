@@ -7,17 +7,14 @@ block main
     p
     each item, index in json
       div
-        h3= item.title
+        h6= item.title
         br
         div   
             a(href="/"+page+"/"+index)
-                img(src=""+item.thumb width="")
+                img(src=""+item.thumb width="200px")
             div.product
-                p
-                a(href= item.link title= "View or purchase \"" +item.title+"\" at Boosey.com" target="_blank").btn.btn-outline-info.btn-xs= "Purchase"
-                p
                 p= item.description
-                p= "ISMN "+item.ismn
+                //- p= "ISMN "+item.ismn
             //- div.product
                 img(src="images/"+item.sample width="300px")
                 img(src="images/"+item.illustration width="200px")
