@@ -12,5 +12,5 @@ block main
         tr.home
         each item, index in json1
           td.home
-            a(href="/"+page+"/"+index title= item.title+ " "+ item.description)
+            a(href="/painting/"+index title= item.title+ " "+ item.description)
               img(src=""+item.thumb width="200px")
