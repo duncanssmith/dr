@@ -10,7 +10,7 @@ block main
     div
       table.home
         tr.home
-        each item, index in json1
+        for item, index in json1
           td.home
             a(href="/painting/"+index title= item.title+ " "+ item.description)
               img(src=""+item.thumb width="200px")
